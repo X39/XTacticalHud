@@ -1,36 +1,22 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# ArmA related files
+*.pbo
+*.bisign
+*.bin
 
-# Folder config file
-Desktop.ini
+# log files
+*.log
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# some general exceptions to keeps the syncs small and leave unneded files local
+*.tga
+*.png
+*.jpeg
+*.jpg
+*.jpe
+*.ps
+*.ps
+*.pdn
+*.xcf
+*.3ds
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must ends with two \r.
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# specific files
+buildScript.cmd

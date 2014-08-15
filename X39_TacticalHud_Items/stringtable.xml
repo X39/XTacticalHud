@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+	<Package name="X39_TacticalHud_Items">
+		<Container name="Items">
+			<Key ID="STR_X39_TacticalHud_AirMissionControlDevice">
+				<English>Mission control device</English>
+				<German>Auftrags Konsole</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>

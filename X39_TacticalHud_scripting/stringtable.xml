@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+	<Package name="X39_TacticalHud_scripting">
+		<Container name="AirMission">
+			<!--MFD MainMenu-->
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_MainMenu">
+				<English>Main Menu</English>
+				<German>Hauptmen&uuml;</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_ListAssignedMissions">
+				<English>List assigned missions</English>
+				<German>Zugewiesene Missionen anzeigen</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_ListAvailableMissions">
+				<English>List available missions</English>
+				<German>Verf&uuml;gbare Missionen anzeigen</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_ExitMfd">
+				<English>Exit</English>
+				<German>Schließen</German>
+			</Key>
+			<!-- MFD listMissionsPage -->
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_LastPage">
+				<English>Last page</English>
+				<German>Vorherige seite</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_NextPage">
+				<English>Next page</English>
+				<German>N&auml;chste seite</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_BackToMainMenu">
+				<English>Back to main menu</English>
+				<German>Zurück zum Hauptmen&uuml;</German>
+			</Key>
+			<!-- Messages -->
+			<!-- %1 = Pilot name, %2 = Mission Name -->
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_SomeoneAssignedMission">
+				<English>A Pilot (%1) accepted a mission: %2</English>
+				<German>%1 hat sich der Mission "%2" angenommen</German>
+			</Key>
+			<!-- %1 = Pilot name, %2 = Mission Name -->
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_SomeoneDroppedMission">
+				<English>A Pilot (%1) has dropped a mission: %2</English>
+				<German>%1 hat die mission "%2% abgelegt</German>
+			</Key>
+			<!-- %1 = Mission Name -->
+			<Key ID="STR_X39_TacticalHud_scripting_AirMission_SomeoneCreatedMission">
+				<English>There is a new mission available: %1</English>
+				<German>Es ist eine neue Mission verf&uuml;gbar: %1</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>

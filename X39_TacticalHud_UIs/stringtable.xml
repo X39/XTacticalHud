@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+	<Package name="X39_TacticalHud_UIs">
+		<Container name="X39_TacticalHud_AirMissionGroundForcesUI">
+			<!--MFD MainMenu-->
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_Color">
+				<English>Color</English>
+				<German>Farbe</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_Icon">
+				<English>Icon</English>
+				<German>Bild</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_Coordinates">
+				<English>Coordinates</English>
+				<German>Koordinaten</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_Name">
+				<English>Name</English>
+				<German>Bezeichnung</German>
+			</Key>
+			
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_TitleEditAirMission">
+				<English>Edit AirMission</English>
+				<German>Mission bearbeiten</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_TitleCreateAirMission">
+				<English>Create AirMission</English>
+				<German>Mission erstellen</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_TitleInfoBox">
+				<English>InfoBox</English>
+				<German>InfoBox</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_TitleMissionList">
+				<English>Mission list</English>
+				<German>Missions liste</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_Headline">
+				<English>AirMission ControlUI</English>
+				<German>Auftrags Konsolen Oberfl&auml;che</German>
+			</Key>
+			
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_btnUpdateMission">
+				<English>Update mission</English>
+				<German>Mission aktualisieren</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_btnCreateMission">
+				<English>Create mission</English>
+				<German>Mission erstellen</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_btnDeleteMission">
+				<English>Delete mission</English>
+				<German>Mission l&ouml;schen</German>
+			</Key>
+			<Key ID="STR_X39_TacticalHud_AirMissionGroundForcesUI_btnRefreshMissionList">
+				<English>Refresh missionlist</English>
+				<German>Missions liste aktualisieren</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>
