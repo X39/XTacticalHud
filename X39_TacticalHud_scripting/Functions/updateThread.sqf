@@ -1,5 +1,5 @@
 #define display (uiNamespace getVariable "X39_TacticalHud_Ui")
-#define displayControl(X) ((uiNamespace getVariable "X39_TacticalHud_Ui") displayCtrl X)
+#define displayControl(X) (display displayCtrl X)
 /**
  *	
  *	Updates the HUD
@@ -26,13 +26,13 @@ _res = [] spawn {
 		_isVisible = (vehicle player == player) && {X39_TacticalHud_var_HasTacticalGlasses && {X39_TacticalHud_var_HasGps}};
 		if(!_isVisible && _wasVisible || _isVisible && !_wasVisible) then
 		{
-			if(X39_TacticalHud_var_enableAngleDisplay) then
+			if(profileNamespace getVariable "X39_TacticalHud_var_enableAngleDisplay") then
 			{
 				displayControl(2200) ctrlShow _isVisible;
 				displayControl(1000) ctrlShow _isVisible;
 				displayControl(1001) ctrlShow _isVisible;
 			};
-			if(X39_TacticalHud_var_enableGridCoordinatesDisplay) then
+			if(profileNamespace getVariable "X39_TacticalHud_var_enableGridCoordinatesDisplay") then
 			{
 				displayControl(2201) ctrlShow _isVisible;
 				displayControl(1002) ctrlShow _isVisible;
@@ -41,7 +41,7 @@ _res = [] spawn {
 		};
 		if(_isVisible) then
 		{
-			if(X39_TacticalHud_var_enableAngleDisplay) then
+			if(profileNamespace getVariable "X39_TacticalHud_var_enableAngleDisplay") then
 			{
 				_dir = ((eyeDirection player select 0) atan2 (eyeDirection player select 1)) % 360;
 				if(_dir < 0) then
@@ -52,7 +52,7 @@ _res = [] spawn {
 				displayControl(1000) ctrlSetText _bearing;
 				displayControl(1001) ctrlSetText str (floor _dir);
 			};
-			if(X39_TacticalHud_var_enableGridCoordinatesDisplay) then
+			if(profileNamespace getVariable "X39_TacticalHud_var_enableGridCoordinatesDisplay") then
 			{
 				_strX = toArray str (((abs (position player select 0)) - (abs (position player select 0)) % 10) / 10);
 				_arr = [48, 48, 48, 48];
@@ -97,7 +97,7 @@ _res = [] spawn {
 				displayControl(1002) ctrlSetText format["%1-%2", _strX, _strY];
 			};
 		};
-		sleep 0.0001;
+		sleep 0.125;
 	};
 	("X39_TacticalHud_Ui" call BIS_fnc_rscLayer) cutText ["", "PLAIN", 0, false];
 	sleep 1;

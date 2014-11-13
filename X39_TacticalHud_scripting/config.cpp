@@ -19,9 +19,9 @@ class CfgFunctions
 	{
 		class Generic
 		{
-			class initMod:X39_XLib_Function_TypeB					{file = "X39_TacticalHud_scripting\Functions\initMod.sqf";};
+			class preInit:X39_XLib_Function_TypeB					{file = "X39_TacticalHud_scripting\Functions\preInit.sqf";};
+			class postInit:X39_XLib_Function_TypeC					{file = "X39_TacticalHud_scripting\Functions\postInit.sqf";};
 			class updateThread:X39_XLib_Function_TypeA				{file = "X39_TacticalHud_scripting\Functions\updateThread.sqf";};
-			class handleKeyPress:X39_XLib_Function_TypeA			{file = "X39_TacticalHud_scripting\Functions\handleKeyPress.sqf";};
 		};
 		class FireMissions
 		{
