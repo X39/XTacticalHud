@@ -6,7 +6,7 @@
  *
  *	@ParamsCount 0
  *	@Return - NA
- *	@Author - X39|Cpt. HM Murdock
+ *	@Author - X39|Cpt. HM Murdock, Benargee
  */
 if(isDedicated) exitWith {};
 if(!hasInterface) exitWith {};
@@ -43,12 +43,15 @@ _res = [] spawn {
 		{
 			if(profileNamespace getVariable "X39_TacticalHud_var_enableAngleDisplay") then
 			{
-				_dir = ((eyeDirection player select 0) atan2 (eyeDirection player select 1)) % 360;
+				_vec0 = positionCameraToWorld [0,0,0];
+				_vec1 = positionCameraToWorld [0,0,100]; 
+				_diff = _vec1 vectorDiff _vec0; 
+				_dir = ((_diff select 0) atan2 (_diff select 1)) % 360;
 				if(_dir < 0) then
 				{
 					_dir = 360 + _dir;
 				};
-				_bearing = player call X39_XLib_fnc_getUnitsBearing;
+				_bearing = player call X39_XLib_fnc_getUnitsBearingCamera;
 				displayControl(1000) ctrlSetText _bearing;
 				displayControl(1001) ctrlSetText str (floor _dir);
 			};

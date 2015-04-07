@@ -103,5 +103,3 @@ else \
 	#endif
 	
 //#endif
-
-#include "\X39_MS2_Scripting\Functions\HitZones\hitZones.hpp"
